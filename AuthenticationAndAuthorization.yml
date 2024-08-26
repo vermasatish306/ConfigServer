@@ -1,1 +1,36 @@
 
+spring:
+  application:
+    name: AuthenticationAndAuthorization
+  boot:
+    admin:
+      client:
+        url: http://localhost:111/  
+  config:
+    import: 'optional:configserver:http://localhost:222/ '      
+auth-service:
+  message:
+    userEre: User Creation Fail
+    userm: User Created
+    login: User Login sucessfuly
+    loginErr: Login Credentials
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: '"*"  '
+
+
+  
+  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: manager
+    url: 'jdbc:mysql://localhost:3306/ecommerceapplication '
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
