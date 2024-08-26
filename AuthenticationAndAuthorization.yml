@@ -24,8 +24,8 @@ management:
   
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: manager
     url: jdbc:mysql://localhost:3306/ecommerceapplication
+    password: manager    
     username: root
   jpa:
     hibernate:
