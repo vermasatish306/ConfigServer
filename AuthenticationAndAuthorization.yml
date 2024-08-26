@@ -4,7 +4,15 @@ spring:
     admin:
       client:
         url: http://localhost:1111/  
-       
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ecommerceapplication
+    password: manager    
+    username: root        
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true     
 auth-service:
   message:
     userEre: User Creation Fail
@@ -16,15 +24,8 @@ management:
     web:
       exposure:
         exclude: "*"    
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ecommerceapplication
-    password: manager    
-    username: root
-  jpa:
-    hibernate:
-      ddl-auto: create
-    show-sql: true
+  
+
 server:
   port: 9090    
 
