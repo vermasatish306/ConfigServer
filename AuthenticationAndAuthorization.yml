@@ -6,8 +6,7 @@ spring:
     admin:
       client:
         url: http://localhost:111/  
-  config:
-    import: 'optional:configserver:http://localhost:222/ '      
+       
 auth-service:
   message:
     userEre: User Creation Fail
