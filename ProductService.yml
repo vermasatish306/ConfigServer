@@ -1,1 +1,29 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/productservice
+    password: manager    
+    username: root        
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true     
+product-service:
+  message:
+    userEre: User Creation Fail
+    userm: User Created
+    login: User Login sucessfuly
+    loginErr: Login Credentials
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: '*'    
+  
 
+server:
+  port: 9091  
