@@ -12,12 +12,13 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true     
-product-service:
+product-Service:
   message:
-    userEre: User Creation Fail
-    userm: User Created
-    login: User Login sucessfuly
-    loginErr: Login Credentials
+    catc: Category Created Successfully   
+    catn: Category Not Created
+    catf: Category Found Successfullly 
+    catnf: Category Not Found
+    acatf: All Ctegory Found SucessFully
 management:
   endpoints:
     web:
