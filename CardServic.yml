@@ -1,1 +1,33 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cardservice
+    password: manager    
+    username: root        
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true     
+card-service:
+  message:
+    prodc: Card Add Successful
+    prodnc: Card Already Created
+    prodf: Product Found Successful
+    prodnf: Product Not Found
+    prodaf: All product Found  Successful 
+    produ: Product Updated
+    prodd: product Deleted
+    prodsu: Product Stock Updated
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: '*'    
+  
 
+server:
+  port: 9092  
