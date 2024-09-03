@@ -1,3 +1,4 @@
+
 spring:
   boot:
     admin:
@@ -10,7 +11,7 @@ spring:
     username: root        
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true     
 product-Service:
   message:
